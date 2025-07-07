@@ -1,0 +1,67 @@
+/* AddTodo.css */
+
+.todo-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #4b7dae;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(17, 34, 48, 0.1);
+}
+
+.todo-input {
+  padding: 0.5rem;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.todo-button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.todo-button:hover {
+  background: #45a049;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: #b86f6f;
+  border-radius: 8px;
+  border: 1px solid #171515;
+}
+
+.todo-item span {
+  font-size: 1.1rem;
+}
+
+.delete-button {
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #e53935;
+}
+
+.error-text {
+  color: red;
+  margin-top: 1rem;
+  font-weight: 500;
+}
