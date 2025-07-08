@@ -1,0 +1,19 @@
+.card {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    height: 100px;
+    background-color: antiquewhite;
+    box-shadow: rgb(red, green, blue);
+
+}
+
+.card-data {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.card p {
+    color: aquamarine;
+}
