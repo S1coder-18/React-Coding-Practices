@@ -6,6 +6,10 @@ function AddTodo() {
   const [todos, setTodos] = useState([]);
   const [error, setError] = useState("");
 
+  const handleTask = (e) => {
+    setTask(e.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!task.trim()) {
@@ -22,6 +26,12 @@ function AddTodo() {
     setTodos(filtered);
   };
 
+  const handleUpdate = (updateIndex) =>{
+    setTask(todos[updateIndex]);
+    (handleDelete(updateIndex));
+
+  }
+
   return (
     <div className="todo-container">
       <div>
@@ -29,7 +39,7 @@ function AddTodo() {
           type="text"
           placeholder="Enter the task"
           value={task}
-          onChange={(e) => setTask(e.target.value)}
+          onChange={handleTask}
           className="todo-input"
         />
         <button onClick={handleSubmit} className="todo-button">
@@ -41,8 +51,17 @@ function AddTodo() {
         {todos.map((data, index) => (
           <div key={index} className="todo-item">
             <span>{data}</span>
-            <button onClick={() => handleDelete(index)} className="delete-button">
+            <button
+              onClick={() => handleDelete(index)}
+              className="delete-button"
+            >
               Delete
+            </button>
+            <button
+              onClick={() => handleUpdate(index)}
+              className="update-button"
+            >
+              Edit
             </button>
           </div>
         ))}
