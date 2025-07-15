@@ -1,0 +1,26 @@
+.Form-Validator {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+.Name-Validator {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Email-Validator {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
