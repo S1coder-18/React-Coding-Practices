@@ -20,14 +20,24 @@ function DataFetch() {
     <>
       <div>
         <h2> Users List</h2>
-        {posts.map((post) => {
+        <table className="table-data">
+          <thead>
+            <tr>
+              <th>title</th>
+              <th>content</th>
+            </tr>
+          </thead>
+          <tbody>
+            {posts.map((post) => {
           return (
-            <ol key={post.id} className="post-list">
-              <li className="title">{post.title}</li>
-              <li>{post.body}</li>
-            </ol>
+            <tr key={post.id} className="post-list">
+              <td className="title">{post.title}</td>
+              <td>{post.body}</td>
+            </tr>
           );
         })}
+          </tbody>
+        </table>
       </div>
     </>
   );
