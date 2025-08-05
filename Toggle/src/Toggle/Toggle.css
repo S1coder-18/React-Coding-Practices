@@ -1,0 +1,48 @@
+.toggle {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    background-color: white;
+    box-shadow: 2px 4px 4px 2px;
+    text-align: center;
+}
+
+.toggle:hover {
+    transform: translateY(-2.4px);
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: white;
+}
+
+button:hover {
+    transform: translateY(-2.5px);
+}
+
+.text {
+    margin-top: 20px;
+    color: blue;
+    background-color: white;
+}
+
+.text:hover {
+    color: blueviolet;
+}
+
+.toggle img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+}
